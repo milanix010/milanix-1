@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🎵 Milanix Music</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <link rel="icon" href="/assets/logo.png">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      background-color: #000;
+      color: white;
+    }
+    section {
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+    }
+    .section-title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+    nav a.active {
+      border-bottom: 2px solid white;
+    }
+    .parallax-bg {
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+    }
+    #particles-js {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body class="font-sans leading-relaxed">
+  <div id="particles-js"></div>
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full bg-black bg-opacity-80 z-50 shadow-md">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+      <img src="/assets/logo.png" alt="Milanix Logo" class="h-10">
+      <div id="navbar-links" class="space-x-6">
+        <a href="#about" class="text-white hover:text-gray-300" data-section="about">About</a>
+        <a href="#team" class="text-white hover:text-gray-300" data-section="team">Team</a>
+        <a href="#projects" class="text-white hover:text-gray-300" data-section="projects">Projects</a>
+        <a href="#join" class="text-white hover:text-gray-300" data-section="join">Join Us</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Banner -->
+  <header class="relative h-screen parallax-bg pt-20" style="background-image: url('/assets/banner.jpg');">
+    <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center">
+      <div class="text-center">
+        <img src="/assets/logo.png" alt="Milanix Logo" class="mx-auto mb-4 w-32 animate-bounce">
+        <h1 class="text-4xl md:text-6xl font-bold text-white">Welcome to Milanix</h1>
+        <p class="text-lg mt-4 text-gray-300">Where sound becomes art.</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Milanix -->
+  <section id="about" class="container mx-auto px-6">
+    <h2 class="section-title text-white">About Milanix</h2>
+    <p class="text-gray-300 max-w-3xl">Milanix is a visionary music company pushing boundaries in sound design, digital production, and artistic collaborations. We curate sonic experiences that resonate deeply across cultures and genres.</p>
+  </section>
+
+  <!-- Team & Contributors -->
+  <section id="team" class="container mx-auto px-6">
+    <h2 class="section-title text-white">Team & Contributors</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-gray-900 p-4 rounded-xl shadow-lg text-center">
+        <img src="/assets/person1.jpg" class="w-24 h-24 mx-auto rounded-full mb-2" />
+        <h3 class="text-lg font-semibold">Alex Wave</h3>
+        <p class="text-gray-400">Founder & Producer</p>
+      </div>
+      <div class="bg-gray-900 p-4 rounded-xl shadow-lg text-center">
+        <img src="/assets/person2.jpg" class="w-24 h-24 mx-auto rounded-full mb-2" />
+        <h3 class="text-lg font-semibold">Rhea Tone</h3>
+        <p class="text-gray-400">Sound Engineer</p>
+      </div>
+      <div class="bg-gray-900 p-4 rounded-xl shadow-lg text-center">
+        <img src="/assets/person3.jpg" class="w-24 h-24 mx-auto rounded-full mb-2" />
+        <h3 class="text-lg font-semibold">Dylan Keys</h3>
+        <p class="text-gray-400">Composer & Artist</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="container mx-auto px-6">
+    <h2 class="section-title text-white">Projects</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="bg-gray-800 p-6 rounded-xl shadow-md">
+        <h3 class="text-xl font-semibold">Echoes of Tomorrow</h3>
+        <p class="text-gray-400 mt-2">A futuristic ambient experience featuring AI-generated compositions and organic instrumentation.</p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-xl shadow-md">
+        <h3 class="text-xl font-semibold">NeoRhythm</h3>
+        <p class="text-gray-400 mt-2">A percussive journey through world rhythms and synthetic grooves.</p>
+      </div>
+    </div>
+    <div class="mt-10">
+      <h3 class="text-xl font-semibold mb-4">Featured Track</h3>
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3n3Ppam7vgaVa1iaRUc9Lp?utm_source=generator" width="100%" height="152" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <!-- Join Us -->
+  <section id="join" class="container mx-auto px-6 text-center">
+    <h2 class="section-title text-white">Get Involved / Join Us</h2>
+    <p class="text-gray-300 mb-6">We welcome passionate musicians, producers, and visionaries to collaborate with us. Let’s create magic together.</p>
+    <a href="https://forms.gle/your-google-form-link" target="_blank">
+      <button class="bg-white text-black px-6 py-3 rounded-full font-semibold hover:bg-gray-300 transition-all duration-300">Join Milanix</button>
+    </a>
+  </section>
+
+  <footer class="text-center py-8 text-gray-500">© 2025 Milanix Music. All rights reserved.</footer>
+
+  <script>
+    particlesJS('particles-js', {
+      particles: {
+        number: { value: 80 },
+        color: { value: '#ffffff' },
+        shape: { type: 'circle' },
+        opacity: { value: 0.5 },
+        size: { value: 3 },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: '#ffffff',
+          opacity: 0.4,
+          width: 1
+        },
+        move: {
+          enable: true,
+          speed: 2,
+          direction: 'none',
+          random: false,
+          straight: false,
+          out_mode: 'out'
+        }
+      },
+      interactivity: {
+        events: {
+          onhover: { enable: true, mode: 'repulse' },
+          onclick: { enable: true, mode: 'push' },
+        },
+        modes: {
+          repulse: { distance: 100 },
+          push: { particles_nb: 4 }
+        }
+      },
+      retina_detect: true
+    });
+
+    ScrollReveal().reveal('section', {
+      duration: 1000,
+      origin: 'bottom',
+      distance: '50px',
+      easing: 'ease-in-out',
+      reset: true
+    });
+
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('#navbar-links a');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 100;
+        const sectionHeight = section.offsetHeight;
+        if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('data-section') === current) {
+          link.classList.add('active');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
